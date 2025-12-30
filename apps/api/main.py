@@ -43,10 +43,46 @@ def startup_event():
 
 @app.get("/health")
 def health_check():
+    import json
+    import time
+    log_path = "/Users/haipei/Desktop/消防/Legal_DB/02_Laws/XF_FireLaw_2021/.cursor/debug.log"
+    # #region agent log
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps({"location":"main.py:44","message":"health check called","data":{"endpoint":"/health"},"timestamp":int(time.time()*1000),"sessionId":"debug-session","runId":"run1","hypothesisId":"A"})+"\n")
+    # #endregion
     return {"status": "ok"}
+
+@app.get("/")
+def root():
+    import json
+    import time
+    log_path = "/Users/haipei/Desktop/消防/Legal_DB/02_Laws/XF_FireLaw_2021/.cursor/debug.log"
+    # #region agent log
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps({"location":"main.py:52","message":"root endpoint called","data":{"endpoint":"/"},"timestamp":int(time.time()*1000),"sessionId":"debug-session","runId":"run1","hypothesisId":"A"})+"\n")
+    # #endregion
+    return {"message": "Fire Pump Maintenance MVP API", "docs": "/docs", "health": "/health"}
 
 if __name__ == "__main__":
     import uvicorn
+    import json
+    import time
+    log_path = "/Users/haipei/Desktop/消防/Legal_DB/02_Laws/XF_FireLaw_2021/.cursor/debug.log"
     port = int(os.getenv("API_PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    # #region agent log
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps({"location":"main.py:48","message":"backend startup attempt","data":{"port":port,"host":"0.0.0.0"},"timestamp":int(time.time()*1000),"sessionId":"debug-session","runId":"run1","hypothesisId":"A"})+"\n")
+    # #endregion
+    try:
+        # #region agent log
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(json.dumps({"location":"main.py:52","message":"uvicorn.run called","data":{"port":port},"timestamp":int(time.time()*1000),"sessionId":"debug-session","runId":"run1","hypothesisId":"A"})+"\n")
+        # #endregion
+        uvicorn.run(app, host="0.0.0.0", port=port)
+    except Exception as e:
+        # #region agent log
+        with open(log_path, "a", encoding="utf-8") as f:
+            f.write(json.dumps({"location":"main.py:56","message":"backend startup failed","data":{"error":str(e),"error_type":type(e).__name__},"timestamp":int(time.time()*1000),"sessionId":"debug-session","runId":"run1","hypothesisId":"C"})+"\n")
+        # #endregion
+        raise
 

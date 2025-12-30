@@ -78,7 +78,7 @@ def generate_pdf_report(work_order, location, iot_snapshot, output_dir: str = No
     c.setFont("Helvetica", 11)
     c.drawString(2*cm, y, f"压力: {iot_snapshot.pressure} MPa")
     y -= 0.5*cm
-    c.drawString(2*cm, y, f"泵运行状态: {iot_snapshot.pump_status}")
+    c.drawString(2*cm, y, f"泵运行状态: {iot_snapshot.pump_running}")
     y -= 0.5*cm
     c.drawString(2*cm, y, f"快照时间: {iot_snapshot.timestamp.strftime('%Y-%m-%d %H:%M:%S')}")
     

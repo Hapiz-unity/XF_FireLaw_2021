@@ -26,12 +26,11 @@ def fetch_latest_snapshot(device_id: str = None):
     # Return mock data with varying values for demo
     import random
     pressure_values = [0.60, 0.65, 0.70, 0.55]
-    pump_statuses = ["running", "stopped"]
     
     return {
         "device_id": device_id or "pump_001",
         "timestamp": datetime.utcnow().isoformat() + "Z",
         "pressure": random.choice(pressure_values),
-        "pump_status": random.choice(pump_statuses)
+        "pump_running": random.choice([True, False])  # Boolean, not string
     }
 
