@@ -1,0 +1,24 @@
+{
+  "LOC001": {
+    "metrics": {
+      "pressure": { "unit": "MPa", "unit_source": "integrator_doc" },
+      "flow": { "unit": "L/s", "unit_source": "unknown" },
+      "current": { "unit": "A", "unit_source": "unknown" }
+    }
+  },
+  "LOC002": {
+    "metrics": {
+      "pressure": { "unit": "MPa", "unit_source": "integrator_doc" },
+      "flow": { "unit": "L/s", "unit_source": "unknown" },
+      "current": { "unit": "A", "unit_source": "unknown" }
+    }
+  },
+  "LOC003": {
+    "metrics": {
+      "pressure": { "unit": "MPa", "unit_source": "integrator_doc" },
+      "flow": { "unit": "L/s", "unit_source": "unknown" },
+      "current": { "unit": "A", "unit_source": "unknown" }
+    }
+  }
+}
+

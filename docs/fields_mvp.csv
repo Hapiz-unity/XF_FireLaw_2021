@@ -1,0 +1,7 @@
+field_name,field_label,field_type,options,required
+pumphouse,泵房,select,正常|异常,true
+endpoint,末端,select,正常|异常,true
+hydrant,栓,select,正常|异常,true
+linkage,联动,select,正常|异常,true
+conclusion,结论,textarea,,false
+

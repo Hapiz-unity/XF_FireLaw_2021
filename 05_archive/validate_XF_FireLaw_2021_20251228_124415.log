@@ -1,0 +1,32 @@
+[LAW] XF_FireLaw_2021
+[TXT] /Users/haipei/Desktop/消防/Legal_DB/02_Laws/XF_FireLaw_2021/02_data/XF_FireLaw_2021.txt
+[RESULT] ERROR=0, WARN=0, INFO=14
+------------------------------------------------------------------------------------------
+[INFO] L8: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第一章　总　　则
+[INFO] L9: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第二章　火灾预防
+[INFO] L10: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第三章　消防组织
+[INFO] L11: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第四章　灭火救援
+[INFO] L12: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第五章　监督检查
+[INFO] L13: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第六章　法律责任
+[INFO] L14: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第七章　附　　则
+[INFO] L16: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第一章　总　　则
+[INFO] L42: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第二章　火灾预防
+[INFO] L129: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第三章　消防组织
+[INFO] L154: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第四章　灭火救援
+[INFO] L189: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第五章　监督检查
+[INFO] L208: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第六章　法律责任
+[INFO] L286: 检测到“第X章 …”行（正常）。convert.py 可过滤。
+        第七章　附　　则
